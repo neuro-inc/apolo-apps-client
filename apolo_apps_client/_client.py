@@ -1,4 +1,5 @@
 import logging
+import typing as t
 from types import TracebackType
 
 import aiohttp
@@ -33,7 +34,7 @@ class AppsApiClient:
     def _get_app_url(self, instance_id: str, version: str) -> URL:
         return self._get_apps_url(version) / instance_id
 
-    async def __aenter__(self) -> "AppsApiClient":
+    async def __aenter__(self) -> t.Self:
         self._client = self._create_http_client()
         return self
 
