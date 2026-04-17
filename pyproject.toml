@@ -11,6 +11,7 @@ dependencies = ["aiohttp (>=3.12.14,<4.0.0)", "pydantic (>=2.11.7,<3.0.0)"]
 dynamic = ["version"]
 
 [tool.poetry]
+requires-poetry = "==2.2.1"
 version = "0.0.0"
 
 [tool.poetry.requires-plugins]
