@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        py_version: [ "3.12", "3.13" ]
+        py_version: [ "3.12", "3.13", "3.14" ]
     steps:
       - name: Checkout commit
         uses: actions/checkout@v6
@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        py_version: [ "3.12", "3.13" ]
+        py_version: [ "3.12", "3.13", "3.14" ]
     steps:
       - name: Checkout commit
         uses: actions/checkout@v6
@@ -53,7 +53,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        py_version: [ "3.12", "3.13" ]
+        py_version: [ "3.12", "3.13", "3.14" ]
     steps:
       - name: Checkout commit
         uses: actions/checkout@v6
