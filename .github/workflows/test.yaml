@@ -14,7 +14,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Setup Python
-        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@master
+        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@ys/drop-poetry-version-file
       - name: Install dependencies
         run: make setup
       - name: Lint
@@ -34,7 +34,7 @@ jobs:
       - name: Checkout commit
         uses: actions/checkout@v6
       - name: Setup Python
-        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@master
+        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@ys/drop-poetry-version-file
       - name: Install dependencies
         run: make setup
       - name: Run unit tests
@@ -58,7 +58,7 @@ jobs:
       - name: Checkout commit
         uses: actions/checkout@v6
       - name: Setup Python
-        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@master
+        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@ys/drop-poetry-version-file
       - name: Install dependencies
         run: make setup
       - name: Login to ghcr.io
