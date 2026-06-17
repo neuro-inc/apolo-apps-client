@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        py_version: [ "3.12", "3.13", "3.14" ]
+        py_version: ["3.12", "3.13", "3.14"]
     steps:
       - name: Checkout commit
         uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Setup Python
-        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@v26.6.0
+        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@v26.6.1
       - name: Install dependencies
         run: make setup
       - name: Lint
@@ -29,12 +29,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        py_version: [ "3.12", "3.13", "3.14" ]
+        py_version: ["3.12", "3.13", "3.14"]
     steps:
       - name: Checkout commit
         uses: actions/checkout@v6
       - name: Setup Python
-        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@v26.6.0
+        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@v26.6.1
       - name: Install dependencies
         run: make setup
       - name: Run unit tests
@@ -53,12 +53,12 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        py_version: [ "3.12", "3.13", "3.14" ]
+        py_version: ["3.12", "3.13", "3.14"]
     steps:
       - name: Checkout commit
         uses: actions/checkout@v6
       - name: Setup Python
-        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@v26.6.0
+        uses: neuro-inc/reuse/.github/actions/setup-python-poetry@v26.6.1
       - name: Install dependencies
         run: make setup
       - name: Login to ghcr.io
