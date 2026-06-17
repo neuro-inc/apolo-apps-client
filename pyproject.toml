@@ -14,7 +14,7 @@ dependencies = [
 dynamic = ["version"]
 
 [tool.poetry]
-requires-poetry = ">=2.2.1"
+requires-poetry = ">=2.4.1"
 version = "0.0.0"
 
 [tool.poetry.requires-plugins]
