@@ -40,7 +40,7 @@ pytest = "^9.1.0"
 pytest-asyncio = "^1.4.0"
 pytest-cov = "^7.1.0"
 cryptography = "^49.0.0"
-pytest-aiohttp = "^1.1.0"
+pytest-aiohttp = "^1.1.1"
 
 [tool.ruff.lint]
 select = [
