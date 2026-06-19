@@ -24,7 +24,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: metadata
         id: metadata
         if: github.actor == 'dependabot[bot]'
@@ -47,7 +47,7 @@ jobs:
       id-token: write # IMPORTANT: mandatory for trusted publishing & sigstore
     steps:
       - name: Checkout commit
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup Python
         uses: neuro-inc/reuse/.github/actions/setup-python-poetry@v26.6.1
       - name: Install dependencies
