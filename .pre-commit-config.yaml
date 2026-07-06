@@ -34,7 +34,7 @@ repos:
           - -ignore
           - "SC1004:"
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.37.3
+    rev: 0.37.4
     hooks:
       - id: check-github-actions
   - repo: https://github.com/python-poetry/poetry
